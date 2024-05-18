@@ -16,7 +16,8 @@ const Footer = () => {
                     height={30}
                     src="/footer-grid.svg"
                     alt="Grid"
-                    className="w-full h-full opacity-50 "
+                    className="w-full h-full opacity-50"
+                    unoptimized
                 />
                 <h1 className="heading lg:max-w-[45vw]"
                     id="contact"
