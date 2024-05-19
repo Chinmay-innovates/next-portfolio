@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const Footer = () => {
     return (
-        <footer className="w-full mb-[100px] md:mb-5" >
+        <footer className="w-full mb-[100px] md:mb-4 sm:h-full" >
             <div className="flex flex-col items-center">
 
                 <Image
@@ -16,8 +16,7 @@ const Footer = () => {
                     height={30}
                     src="/footer-grid.svg"
                     alt="Grid"
-                    className="w-full h-full opacity-50"
-                    unoptimized
+                    className="w-full h-full opacity-50 "
                 />
                 <h1 className="heading lg:max-w-[45vw]"
                     id="contact"
@@ -37,12 +36,13 @@ const Footer = () => {
                     />
                 </Link>
             </div>
+         
             <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
                 <p className="md:text-base text-sm md:font-normal font-light">
                     Copyright © 2024 Chinmay Innovates
                 </p>
 
-                <div className="flex items-center md:gap-3 gap-6">
+                <div className="flex items-center md:gap-3 gap-6 my-6">
                     {socialMedia.map(({ id, link, img }) => (
                         <div
                             key={id}

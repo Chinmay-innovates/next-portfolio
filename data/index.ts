@@ -73,49 +73,78 @@ export const projects = [
   {
     id: 1,
     title: "Evently a platform for event management.",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
+    des: "Evently is a platform for event management with the latest Next.js, seamless planning ,real-time updates, dynamic scheduling in a modern, responsive interface.",
     img: "/evently.png",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+    iconLists: [
+      "/next.svg",
+      "/tail.svg",
+      "/ts.svg",
+      "/shad.png",
+      "/mongo.svg",
+      "/c.svg",
+    ],
     link: "/next-evently-eosin.vercel.app",
   },
   {
     id: 2,
     title: "Figma Clone   Real Time Collaboration tool",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
+    des: "Figma is a cutting-edge collaboration tool app utilizing the latest Next.js, designed to streamline design workflows with real-time team collaboration. Enjoy intuitive design features, instant feedback, and seamless project management in a fast, responsive environment.",
     img: "/figma.png",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/shad.png", "/lb.png"],
     link: "/next-figma-ts-clone.vercel.app",
   },
   {
     id: 3,
     title: "PriceWise  A Ecom Price Tracking Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
+    des: "PriceWise is a state-of-the-art e-commerce price tracking application built with the latest Next.js, providing real-time price alerts and historical trends for your favorite products. Effortlessly track, compare, and save on purchases with a fast and intuitive user experience.",
     img: "/priceWise.png",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
+    iconLists: [
+      "/next.svg",
+      "/tail.svg",
+      "/ts.svg",
+      "/mongo.svg",
+      "/brightdata.svg",
+      "/hui.png",
+    ],
     link: "/e-commerce-price-tracking-apllication-pricewise.vercel.app",
   },
   {
     id: 4,
     title: "Messenger Clone  in Next JS",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+    des: "This Messenger clone app, developed with the latest Next.js, offers a fast and responsive messaging experience with real-time chat, media sharing, and group conversations. Enjoy a sleek interface and seamless communication across devices, powered by cutting-edge web technology.",
     img: "/messenger.jpg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    iconLists: [
+      "/next.svg",
+      "/tail.svg",
+      "/ts.svg",
+      "/shad.png",
+      "/prisma.png",
+      "/c.svg",
+    ],
     link: "/github.com/Chinmay-innovates/next-ts-messenger-clone",
   },
   {
     id: 5,
     title: "Netflix Clone  in ReactJS NextJS",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+    des: "This Netflix clone app, built with the latest Next.js, delivers a smooth streaming experience with a dynamic, responsive interface and real-time content updates. Enjoy an extensive library of movies and shows, personalized recommendations, and seamless playback across all devices.",
     img: "/netflix.png",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    iconLists: [
+      "/next.svg",
+      "/tail.svg",
+      "/ts.svg",
+      "/shad.png",
+      "/prisma.png",
+      "mongo.svg",
+      "/c.svg",
+    ],
     link: "/github.com/Chinmay-innovates/next-ts-netflix-clone",
   },
   {
     id: 6,
     title: "Chess.com Clone  using Vanilla JS",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+    des: "This Chess.com app, developed with vanilla JavaScript, offers an immersive chess experience with live gameplay, tutorials, and puzzles. Enjoy a clean, intuitive interface and real-time multiplayer matches without any additional frameworks.",
     img: "/chess.png",
-    iconLists: [ "/html.png", "/css.png","/js.png", ],
+    iconLists: ["/html.png", "/css.png", "/js.png"],
     link: "/github.com/Chinmay-innovates/online_chess.com_clone/tree/main/chess_game",
   },
 ];
@@ -188,32 +217,45 @@ export const companies = [
   {
     id: 6,
     name: "Evently",
-    img: "/cloud.svg",
-    nameImg: "/cloudName.svg",
+    img: "/eventlyLogo2.png",
+    subTitle:"Evently"
+    // nameImg: "/eventlyName.svg",
   },
   {
     id: 7,
-    name: "Imaginify",
-    img: "/app.svg",
-    nameImg: "/appName.svg",
+    name: "Figma",
+    img: "/Figma.svg",
+    subTitle:"Figma"
+    // nameImg: "/figmaName.jpg",
   },
   {
     id: 8,
     name: "PriceWise",
-    img: "/host.svg",
-    nameImg: "/hostName.svg",
+    img: "/priceWise.svg",
+    subTitle:"PriceWise"
+    // nameImg: "/hostName.svg",
   },
   {
     id: 9,
     name: "Netflix",
-    img: "/s.svg",
-    nameImg: "/streamName.svg",
+    img: "/n.png",
+    subTitle:"Netflix"
+    // nameImg: "/netflixName.png",
   },
   {
     id: 10,
-    name: "dockerMessenger",
-    img: "/dock.svg",
-    nameImg: "/dockerName.svg",
+    name: "Messenger",
+    img: "/messenger.png",
+    subTitle:"Messenger"
+    // nameImg: "/dockerName.svg",
+  },
+
+  {
+    id: 11,
+    name: "Chess",
+    img: "/chess.com.png",
+    subTitle:"Chess.com"
+    // nameImg: "/appName.svg",
   },
 ];
 
@@ -236,7 +278,7 @@ export const workExperience = [
     id: 3,
     title: "Freelance App Dev Project",
     desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-    className: "md:col-span-2", 
+    className: "md:col-span-2",
     thumbnail: "/exp3.svg",
   },
   {
@@ -252,16 +294,21 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
-    link:"https://github.com/Chinmay-innovates"
+    link: "https://github.com/Chinmay-innovates",
   },
   {
     id: 2,
     img: "/twit.svg",
-    link:"https://github.com/Chinmay-innovates"
+    link: "https://github.com/Chinmay-innovates",
   },
   {
     id: 3,
     img: "/link.svg",
-    link:"https://github.com/Chinmay-innovates"
+    link: "https://github.com/Chinmay-innovates",
+  },
+  {
+    id: 4,
+    img: "/insta.svg",
+    link: "https://github.com/Chinmay-innovates",
   },
 ];

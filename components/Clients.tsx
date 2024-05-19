@@ -17,11 +17,11 @@ const Clients = () => {
                     direction="left"
                     speed="slow"
                 />
-                <div className="flex flex-wrap items-center justify-center gap-4 md:gap-16 max-lg:mt-10">
-                    {companies.map(({ id, img, name, nameImg }) => (
-                        <div key={id} className="flex md:max-w-60 max-w-32 gap-2">
-                            <Image height={40} width={80} src={img} alt={name} className="md:w-10 w-5" />
-                            <Image height={40} width={80} src={nameImg} alt={name} className="md:w-24 w-20" />
+                <div className="flex flex-wrap items-center justify-center gap-4 md:gap-16 max-lg:mt-20">
+                    {companies.map(({ id, img, name, subTitle }) => (
+                        <div key={id} className="flex md:max-w-60 max-w-64 mt-7">
+                            <Image height={80} width={80} src={img} alt={name} className="md:w-10 md:h-10 w-9 h-9 mx-2 " />
+                            <p className="items-center justify-center flex font-sm "> {subTitle} </p>
                         </div>
                     ))}
                 </div>

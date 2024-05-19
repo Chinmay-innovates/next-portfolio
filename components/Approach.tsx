@@ -36,10 +36,9 @@ const Approach = () => {
         >
           <CanvasRevealEffect
             animationSpeed={3}
-            containerClassName="bg-black rounded-3xl overflow-hidden"
+            containerClassName="bg-rose-200 rounded-3xl overflow-hidden"
             colors={[
               [236, 72, 153],
-              [232, 121, 249],
             ]}
             dotSize={2}
           />
