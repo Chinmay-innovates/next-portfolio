@@ -1,7 +1,7 @@
 export const navItems = [
 	{ name: "About", link: "#about" },
 	{ name: "Projects", link: "#projects" },
-	{ name: "Testimonials", link: "#testimonials" },
+	{ name: "Achievements", link: "#achievements" },
 	{ name: "Contact", link: "#contact" },
 ];
 
@@ -73,7 +73,7 @@ export const projects = [
 	{
 		id: 1,
 		title: "Finance Tracker",
-		descrition:
+		description:
 			"Finance - A Platform with ability to track your income and expenses, categorize transactions and assign them to specific accounts, as well as how to import transactions using a CSV file.",
 		img: "/finance.png",
 		iconLists: [
@@ -90,7 +90,7 @@ export const projects = [
 	{
 		id: 2,
 		title: "Task Manager",
-		descrition:
+		description:
 			"Jira - Plan, track, and manage your agile and software development projects in Jira. Customize your workflow, collaborate, and release great software.",
 		img: "/jira.png",
 		iconLists: [
@@ -108,7 +108,7 @@ export const projects = [
 	{
 		id: 3,
 		title: "Cloud Messenger",
-		descrition:
+		description:
 			"Slack clone - Realtime end-to-end fullstack and real-time slack clone, all with workspaces, channels, 1:1 conversations, threads, reactions, editing and deleting messages as well as member roles.",
 		img: "/slack.png",
 		iconLists: [
@@ -126,7 +126,7 @@ export const projects = [
 	{
 		id: 4,
 		title: "Collaborative Board",
-		descrition:
+		description:
 			"Miro clone - A collaborative, real-time whiteboard. Packed with features such as real-time database, whiteboard from scratch with ability to add shapes like Rectangles and Ellipses, Sticky notes and Pencil drawing. Using the newest technologies such as Next.js. 14, Clerk, Convex and LiveBlocks.",
 		img: "/miro.png",
 		iconLists: [
@@ -145,7 +145,7 @@ export const projects = [
 	{
 		id: 5,
 		title: "Diabetes Prediction Model",
-		descrition: "ML model - A Diabetes Prediction Model, classification based",
+		description: "ML model - A Diabetes Prediction Model, classification based",
 		img: "/diabetes.png",
 		link: "https://github.com/Chinmay-innovates/daibetes-prediction-model-V2.0",
 		repoLink:
@@ -154,8 +154,8 @@ export const projects = [
 	{
 		id: 6,
 		title: "Music Player",
-		descrition:
-			"Spotify Clone - A music streaming platform that allows users to  play, and favorite songs. Built with modern technologies like ,Next14, React, Node.js, and Supabase for a smooth and scalable experience",
+		description:
+			"Spotify clone - A music streaming platform that allows users to  play, and favorite songs. Built with modern technologies like ,Next14, React, Node.js, and Supabase for a smooth and scalable experience",
 		img: "/spotify.png",
 		iconLists: [
 			"/next.svg",
@@ -170,7 +170,7 @@ export const projects = [
 	{
 		id: 7,
 		title: "Task Boards",
-		descrition:
+		description:
 			"Trello clone -  An end-to-end fullstack and trello clone, all with workspaces, boards, lists, cards, audit logs / activity as well as member roles.",
 		img: "/taskify.png",
 		iconLists: [
@@ -186,10 +186,90 @@ export const projects = [
 	{
 		id: 8,
 		title: "Python Chess Game",
-		descrition: "chess.com clone in python using pygame module",
+		description: "chess.com clone in python using pygame module",
 		img: "/blue-board.png",
 		link: "https://github.com/Chinmay-innovates/chess-in-pyton",
 		repoLink: "https://github.com/Chinmay-innovates/chess-in-pyton",
+	},
+];
+
+export const achievements = [
+	// {
+	// 	id: 1,
+	// 	title: "Dean's List",
+	// 	description:
+	// 		"Consistently achieved high grades and was recognized on the Dean's List for outstanding academic performance.",
+	// 	thumbnail: "/exp2.svg",
+	// },
+	{
+		id: 2,
+		title: "Internship ",
+		description:
+			"Completed an internship at SkillForge Company.                                                        ",
+		thumbnail: "/exp1.svg",
+	},
+	{
+		id: 3,
+		title: "Python Progrmming and SQL",
+		description:
+			"Completed a training program in Excelr and recieved a participation certificate.",
+		thumbnail: "/exp3.svg",
+	},
+	{
+		id: 4,
+		title: "Finance Tracker Application",
+		description:
+			"A Platform with ability to track your income and expenses, categorize transactions and assign them to specific accounts, as well as how to import transactions using a CSV file.",
+		thumbnail: "/exp4.svg",
+	},
+	{
+		id: 5,
+		title: "Task Manager Application",
+		description:
+			"Jira clone - Plan, track, and manage your agile and software development projects in Jira. Customize your workflow, collaborate, and release great software.",
+		thumbnail: "/exp2.svg",
+	},
+	{
+		id: 6,
+		title: "Cloud Messenger Application",
+		description:
+			"Slack clone - Realtime end-to-end fullstack and real-time slack clone, all with workspaces, channels, 1:1 conversations, threads, reactions, editing and deleting messages as well as member roles.",
+		thumbnail: "/exp1.svg",
+	},
+	{
+		id: 7,
+		title: "Collaborative Board Application",
+		description:
+			"Miro clone - A collaborative, real-time whiteboard. Packed with features such as real-time database, whiteboard ability to add shapes like Rectangles and Ellipses, Sticky notes and Pencil drawing using LiveBlocks.",
+		thumbnail: "/exp3.svg",
+	},
+	{
+		id: 8,
+		title: "Diabetes Prediction Model",
+		description:
+			"ML model - A Diabetes Prediction Model, clazssification based project.",
+		thumbnail: "/exp4.svg",
+	},
+	{
+		id: 9,
+		title: "Music Player Application",
+		description:
+			"Spotify clone - A music streaming platform that allows users to  play, and favorite songs. Built with modern technologies for a smooth and scalable experience.",
+		thumbnail: "/exp2.svg",
+	},
+	{
+		id: 10,
+		title: "Task Boards",
+		description:
+			"Trello clone -  An end-to-end fullstack and trello clone, all with workspaces, boards, lists, cards, audit logs / activity as well as member roles.",
+		thumbnail: "/exp3.svg",
+	},
+	{
+		id: 11,
+		title: "Python Chess Game",
+		description:
+			"Multiplayer chess game in python using pygame module with AI mode and various themes.",
+		thumbnail: "/exp4.svg",
 	},
 ];
 
@@ -223,79 +303,6 @@ export const testimonials = [
 			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita voluptatem voluptatum facere velit perspiciatis cupiditate nostrum consequatur ipsam, nisi sapiente reiciendis quis quos nam. Temporibus nihil beatae expedita at aspernatur.",
 		name: "John doe",
 		title: "Director of ABC Technologies",
-	},
-];
-
-// export const companies = [
-//   {
-//     id: 6,
-//     name: "Evently",
-//     img: "/eventlyLogo2.png",
-//     subTitle:"Evently"
-//     // nameImg: "/eventlyName.svg",
-//   },
-//   {
-//     id: 7,
-//     name: "Figma",
-//     img: "/Figma.svg",
-//     subTitle:"Figma"
-//     // nameImg: "/figmaName.jpg",
-//   },
-//   {
-//     id: 8,
-//     name: "PriceWise",
-//     img: "/priceWise.svg",
-//     subTitle:"PriceWise"
-//     // nameImg: "/hostName.svg",
-//   },
-//   {
-//     id: 9,
-//     name: "Netflix",
-//     img: "/n.png",
-//     subTitle:"Netflix"
-//     // nameImg: "/netflixName.png",
-//   },
-//   {
-//     id: 10,
-//     name: "Messenger",
-//     img: "/messenger.png",
-//     subTitle:"Messenger"
-//     // nameImg: "/dockerName.svg",
-//   },
-
-//   {
-//     id: 11,
-//     name: "Chess",
-//     img: "/chess.com.png",
-//     subTitle:"Chess.com"
-//     // nameImg: "/appName.svg",
-//   },
-// ];
-
-export const workExperience = [
-	{
-		id: 1,
-		title: "Frontend Engineer Intern",
-		desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
-		thumbnail: "/exp1.svg",
-	},
-	{
-		id: 2,
-		title: "Mobile App Dev - Fresher",
-		desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-		thumbnail: "/exp2.svg",
-	},
-	{
-		id: 3,
-		title: "Freelance App Dev Project",
-		desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-		thumbnail: "/exp3.svg",
-	},
-	{
-		id: 4,
-		title: "Lead Frontend Developer",
-		desc: "Developed and maintained user-facing features using modern frontend technologies.",
-		thumbnail: "/exp4.svg",
 	},
 ];
 

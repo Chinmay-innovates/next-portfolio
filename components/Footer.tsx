@@ -1,9 +1,12 @@
+"use client";
 import { FaLocationArrow } from "react-icons/fa6";
 
 import { socialMedia } from "@/data";
 import MagicButton from "./ui/MagicButton";
 import Image from "next/image";
 import Link from "next/link";
+import { MutableRefObject, useRef, useState } from "react";
+import { Button } from "./ui/button";
 
 const Footer = () => {
 	return (
@@ -24,7 +27,64 @@ const Footer = () => {
 					Reach out to me today and let&apos;s discuss how I can help you
 					achieve your goals.
 				</p>
-				<Link href="mailto:chinmaygope69@gmail.com">
+				<div className="container w-full max-w-[500px] flex items-center ">
+					<form
+						action="https://getform.io/f/ayvvkzgb"
+						method="POST"
+						className="mt-12 flex flex-col space-y-7"
+					>
+						<div
+							className="grid items-center grid-cols-1 gap-x-2 
+							 lg:flex lg:items-center 
+							"
+						>
+							<div className="mt-4">
+								<label htmlFor="name" className="label">
+									Name
+								</label>
+								<input
+									required
+									type="text"
+									name="name"
+									id="name"
+									autoComplete="name"
+									placeholder="Chinmay"
+									className="text-field"
+								/>
+							</div>
+
+							<div className="mt-4">
+								<label htmlFor="email" className="label">
+									Email
+								</label>
+								<input
+									required
+									type="email"
+									name="email"
+									id="email"
+									autoComplete="email"
+									placeholder="chinmaygope69@gmail.com"
+									className="text-field"
+								/>
+							</div>
+						</div>
+						<div className="">
+							<label htmlFor="message" className="label">
+								Message
+							</label>
+							<textarea
+								required
+								name="message"
+								id="message"
+								className="text-field resize-y min-h-32 max-h-80"
+								placeholder="Your thoughts"
+							/>
+						</div>
+
+						<Button type="submit">Submit</Button>
+					</form>
+				</div>
+				<Link href="mailto:chinmaygope69@gmail.com" className="mt-7">
 					<MagicButton
 						title="Let's get in touch"
 						icon={<FaLocationArrow />}

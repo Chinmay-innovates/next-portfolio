@@ -1,7 +1,5 @@
 import { projects } from "@/data";
 import { PinContainer } from "./ui/3d-pin";
-import { FaLocationArrow } from "react-icons/fa";
-import Image from "next/image";
 import Link from "next/link";
 import { Globe } from "lucide-react";
 import { FaGithub } from "react-icons/fa6";
@@ -15,7 +13,7 @@ const RecentProjects = () => {
 			</h1>
 			<div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-10">
 				{projects.map(
-					({ id, title, descrition, img, iconLists, link, repoLink }) => (
+					({ id, title, description, img, iconLists, link, repoLink }) => (
 						<div
 							key={id}
 							className="sm:h-[41rem] sm:w-[570px] lg:min-h-[38rem] h-[32rem] flex items-center justify-center w-[80vw]"
@@ -38,7 +36,7 @@ const RecentProjects = () => {
 									<FaGithub className="size-5 ml-2" />
 								</Link>
 								<p className="lg:font-normal lg:text-xl md:text-xl text-base line-clamp-2 mt-2">
-									{descrition}
+									{description}
 								</p>
 								<div className="flex items-center justify-center mt-7 mb-3">
 									<div className="flex items-center">
