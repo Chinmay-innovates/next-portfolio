@@ -74,7 +74,7 @@ const Footer = () => {
 					Reach out to me today and let&apos;s discuss how I can help you
 					achieve your goals.
 				</p>
-				<div className="container w-full max-w-[500px] flex items-center ">
+				<div className="container w-full max-w-[500px] flex items-center place-content-center">
 					<form
 						// onSubmit={handleSubmit}
 						action="https://getform.io/f/ayvvkzgb"
@@ -82,7 +82,7 @@ const Footer = () => {
 						className="mt-12 flex flex-col space-y-7"
 					>
 						<div
-							className="grid items-center grid-cols-1 gap-x-2 
+							className="grid place-items-center sm:grid-cols-2 gap-x-2
 							 lg:flex lg:items-center 
 							"
 						>
