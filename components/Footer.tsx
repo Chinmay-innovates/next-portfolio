@@ -5,10 +5,57 @@ import { socialMedia } from "@/data";
 import MagicButton from "./ui/MagicButton";
 import Image from "next/image";
 import Link from "next/link";
-import { MutableRefObject, useRef, useState } from "react";
 import { Button } from "./ui/button";
 
 const Footer = () => {
+	// const initValues = { name: "", email: "", message: "" };
+	// const [formValues, setFormValues] = useState(initValues);
+	// const [formErrors, setFormErrors] = useState({
+	// 	name: "",
+	// 	email: "",
+	// 	message: "",
+	// });
+	// const [isSubmit, setIsSubmit] = useState<boolean>(false);
+
+	// const handleChange = (
+	// 	e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+	// ) => {
+	// 	const { name, value } = e.target;
+	// 	setFormValues({ ...formValues, [name]: value });
+	// 	console.log(formValues);
+	// };
+
+	// const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+	// 	e.preventDefault();
+	// 	setFormErrors(validate(formValues));
+	// 	setIsSubmit(true);
+	// 	setFormValues(initValues);
+	// };
+
+	// useEffect(() => {
+	// 	console.log(formErrors);
+	// 	if (Object.keys(formErrors).length === 0 && isSubmit) {
+	// 		console.log(formValues);
+	// 	}
+	// }, [formErrors]);
+
+	// const validate =
+	// 	(
+	// 		values: SetStateAction<{ name: string; email: string; message: string }) =>
+	// 	() => {
+	// 		const errors = { name: "", email: "", message: "" };
+	// 		const regex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
+	// 		if (!values.name) {
+	// 			errors.name = "Please enter your name";
+	// 		}
+	// 		if (!values.email) {
+	// 			errors.email = "Please enter your email";
+	// 		}
+	// 		if (!values.name) {
+	// 			errors.message = "Please enter a message";
+	// 		}
+	// 		return errors;
+	// 	};
 	return (
 		<footer className="w-full mb-[100px] md:mb-4 sm:h-full">
 			<div className="flex flex-col items-center">
@@ -29,6 +76,7 @@ const Footer = () => {
 				</p>
 				<div className="container w-full max-w-[500px] flex items-center ">
 					<form
+						// onSubmit={handleSubmit}
 						action="https://getform.io/f/ayvvkzgb"
 						method="POST"
 						className="mt-12 flex flex-col space-y-7"
@@ -44,6 +92,8 @@ const Footer = () => {
 								</label>
 								<input
 									required
+									// value={formValues.name}
+									// onChange={handleChange}
 									type="text"
 									name="name"
 									id="name"
@@ -59,6 +109,8 @@ const Footer = () => {
 								</label>
 								<input
 									required
+									// value={formValues.email}
+									// onChange={handleChange}
 									type="email"
 									name="email"
 									id="email"
@@ -74,6 +126,8 @@ const Footer = () => {
 							</label>
 							<textarea
 								required
+								// value={formValues.message}
+								// onChange={handleChange}
 								name="message"
 								id="message"
 								className="text-field resize-y min-h-32 max-h-80"

@@ -320,7 +320,7 @@ export const socialMedia = [
 	{
 		id: 3,
 		img: "/link.svg",
-		link: "https://linkedin.com",
+		link: "https://www.linkedin.com/in/chinmay-gope-8091082a3",
 	},
 	{
 		id: 4,
